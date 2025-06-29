@@ -21,6 +21,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
+      favicon: "./src/favicon.ico",
     }),
     new miniCssExtractPlugin(),
   ],
@@ -78,9 +79,22 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: "html-loader",
+        options: {
+          sources: {
+            list: [
+              // Standard image attributes
+              { tag: "img", attribute: "src", type: "src" },
+              { tag: "img", attribute: "srcset", type: "srcset" },
+              { tag: "source", attribute: "srcset", type: "srcset" },
+              // Lazy-loading or custom attributes (optional)
+              { tag: "img", attribute: "data-src", type: "src" },
+              { tag: "img", attribute: "data-srcset", type: "srcset" },
+            ],
+          },
+        },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|webp|ico)$/i,
         type: "asset/resource",
       },
     ],

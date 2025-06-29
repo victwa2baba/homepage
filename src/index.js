@@ -4,13 +4,13 @@ import * as bootstrap from "bootstrap";
 // Import images
 import picture1 from "./img/my_photo_700.webp";
 import picture2 from "./img/my_photo_500.webp";
-import dashboard from "./img/admin-dashboard.png";
-import library from "./img/library.png";
-import todo from "./img/todo.png";
-import tictac from "./img/tictac.png";
-import weather from "./img/weather.png";
-import calculator from "./img/calculator.png";
-import footerImg from "./img/footer_image.png";
+import dashboard from "./img/admin-dashboard.webp";
+import library from "./img/library.webp";
+import todo from "./img/todo.webp";
+import tictac from "./img/tictac.webp";
+import weather from "./img/weather.webp";
+import calculator from "./img/calculator.webp";
+import footerImg from "./img/footer_image.webp";
 
 // Create the header section with a grid layout
 const header = document.querySelector("header");

@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'playfair_displayregular';
-    src: url('./fonts/playfairdisplay.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "playfair_displayregular";
+  src: url("./fonts/playfairdisplay.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'poppinsbold';
-    src: url('./fonts/poppins-bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "poppinsbold";
+  src: url("./fonts/poppins-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
   --color-primary: #353535;
   --bg-color: rgb(243, 242, 242);
-  --font-primary: 'playfair_displayregular', serif, sans-serif;
-  --font-secondary: 'poppinsbold', serif, sans-serif;
+  --font-primary: "playfair_displayregular", serif, sans-serif;
+  --font-secondary: "poppinsbold", serif, sans-serif;
   --text-color: #000000;
   --btn-primary-bg: #007bff;
   --btn-primary-color: #ffffff;
@@ -33,14 +33,15 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-secondary), Arial, sans-serif;
   color: var(--color-primary);
 }
 
 h3 {
   font-size: 1.2rem;
-
 }
 
 header {
@@ -50,7 +51,10 @@ header {
 header::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 0;
   background-image: url(./img/bg.webp);
   background-size: cover;
@@ -70,13 +74,14 @@ header > * {
   grid-template-columns: 350px 1fr;
   align-items: center;
   text-align: center;
-  padding: 0 30px
+  padding: 0 30px;
 }
 img {
-  width: 100%
+  width: 100%;
 }
-.svg, svg {
-  width: 25px
+.svg,
+svg {
+  width: 25px;
 }
 
 .dev-container {
@@ -90,7 +95,7 @@ img {
   box-shadow: 0px 5px 9px 2px rgb(82 141 211);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-} 
+}
 
 .dev-container img:hover {
   transform: scale(1.1);
@@ -154,7 +159,7 @@ img {
 
 footer {
   background-color: #3476bd;
-  color: white
+  color: white;
 }
 
 .footer-grid {
@@ -170,7 +175,7 @@ footer {
 }
 
 .footer-logo {
-  width: 100%
+  width: 100%;
 }
 
 .footer-icons {
@@ -181,7 +186,7 @@ footer {
   align-self: flex-start;
 }
 footer p {
-  width: 30ch
+  width: 30ch;
 }
 
 .work-name-container {
@@ -190,7 +195,8 @@ footer p {
 }
 
 @media (min-width: 1441px) {
-  header, .main-grid {
+  header,
+  .main-grid {
     max-width: 1440px;
     justify-self: center;
   }
@@ -207,11 +213,11 @@ footer p {
 }
 
 @media (min-width: 700px) {
-  .fname{
+  .fname {
     position: absolute;
     bottom: 35px;
     left: 10px;
-    color: white
+    color: white;
   }
 }
 
@@ -238,7 +244,7 @@ footer p {
   }
   .contact-container h3 {
     color: white;
-    text-align: center
+    text-align: center;
   }
   .footer-icons {
     justify-content: center;

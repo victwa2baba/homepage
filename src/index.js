@@ -12,7 +12,6 @@ import weather from "./img/weather.png";
 import calculator from "./img/calculator.png";
 import footerImg from "./img/footer_image.png";
 
-
 // Create the header section with a grid layout
 const header = document.querySelector("header");
 header.innerHTML = `
@@ -170,7 +169,7 @@ content.innerHTML = `
 // Create the footer section
 const footer = document.querySelector("footer");
 footer.setAttribute("class", "footer pt-3 text-lg-start");
-footer.innerHTML =  `
+footer.innerHTML = `
     <div class="footer-grid"> 
         <div class="contact-container">
           <h3>Contact me</h3>
@@ -197,4 +196,4 @@ footer.innerHTML =  `
         </div>
         <img src="${footerImg}" alt="victor tounaregha" class="footer-logo">
       </div>
-`
+`;
